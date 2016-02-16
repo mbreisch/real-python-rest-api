@@ -1,0 +1,21 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.TypeError'> <bound method Row.<lambda> of <Row {'status': 200, 'pattern': '/socrata/id/{socrata.id}', 'count': 0}>> is not JSON serializable"
+p3
+sS'layer'
+p4
+S'C:\\babun\\.babun\\cygwin\\home\\Matthew B. Reisch\\RealPython\\web2py\\basic_rest\\applications\\socrata\\views\\generic.json'
+p5
+sS'code'
+p6
+S"from gluon.serializers import json\nresponse.write(XML(json(response._vars)))\nresponse.write('\\n', escape=False)"
+p7
+sS'snapshot'
+p8
+(dp9
+sS'traceback'
+p10
+S'Traceback (most recent call last):\n  File "C:\\babun\\.babun\\cygwin\\home\\Matthew B. Reisch\\RealPython\\web2py\\basic_rest\\gluon\\restricted.py", line 217, in restricted\n    exec ccode in environment\n  File "C:\\babun\\.babun\\cygwin\\home\\Matthew B. Reisch\\RealPython\\web2py\\basic_rest\\applications\\socrata\\views\\generic.json", line 2, in <module>\n  File "C:\\babun\\.babun\\cygwin\\home\\Matthew B. Reisch\\RealPython\\web2py\\basic_rest\\gluon\\serializers.py", line 124, in json\n    default=default).replace(ur\'\\u2028\',\n  File "c:\\python27\\Lib\\json\\__init__.py", line 251, in dumps\n    sort_keys=sort_keys, **kw).encode(obj)\n  File "c:\\python27\\Lib\\json\\encoder.py", line 207, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n  File "c:\\python27\\Lib\\json\\encoder.py", line 270, in iterencode\n    return _iterencode(o, 0)\n  File "C:\\babun\\.babun\\cygwin\\home\\Matthew B. Reisch\\RealPython\\web2py\\basic_rest\\gluon\\serializers.py", line 97, in custom_json\n    raise TypeError(repr(o) + " is not JSON serializable")\nTypeError: <bound method Row.<lambda> of <Row {\'status\': 200, \'pattern\': \'/socrata/id/{socrata.id}\', \'count\': 0}>> is not JSON serializable\n'
+p11
+s.
